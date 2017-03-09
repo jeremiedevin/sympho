@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    
+    <div class="container">
+        <h1>Affichage du dossier {{ dossier }}</h1>
+        
+        <div class="row">
+            {% for item in images %}
+                {% include "default/_vignette.html.twig" %} <br>    
+            {% endfor %}
+        </div>
+        
+    </div>
+    
+{% endblock %}  
